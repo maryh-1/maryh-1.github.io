@@ -4,7 +4,7 @@ layout: post
 ---
 
 
-![Stock Comparison Dashboard]([/StockComparisonDashboard.png](https://github.com/maryh-1/maryh-1.github.io/blob/master/_posts/StockComparisonDashboard.png)
+![Stock Comparison Dashboard](https://github.com/maryh-1/maryh-1.github.io/blob/master/_posts/StockComparisonDashboard.png)
 
 
 The Stock Comparison Dashboard is an Excel dashboard that automatically updates to reflect current stock prices, historical stock prices, daily changes, and hypothetical growth calculations. The dashboard uses references so that the user can change the stocks in the dashboard easily. It refreshes every five minutes so that the user always views up-to-date price data without having to do any manual updates.
