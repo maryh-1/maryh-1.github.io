@@ -98,6 +98,8 @@ Each dataset was stored as a pandas dataframe. The original, non-cleaned dataset
 
 ## Analysis
 
+##### Price, Rating, Number of Reviews, and Numnber of Words in the Title
+
 I started by doing univariate analysis of key numeric variables available for all products. This included price, star rating, number of reviews, and number of words in the title. I calculated the distribution, average, and median of these values across all products, best selling products, and "normal" products. In this case, by normal I mean that the product wasn't listed as a best seller.
 
 Analysis results show that the average price of best selling products is lower than that of normal products ($22.67 vs. $41.15). The avearge price across all products was $40.28. 
@@ -123,6 +125,30 @@ Additionally, products with 5 star ratings tend to very few reviews. Based on th
 The worst-reviewed product was the "Generic Orienting Compass" with only 5 reviews and a 1.8 star rating.
 
 The number of words in a product's title did not seem to have a very significant impact on price, star rating, or the number of reviews a product received. 
+
+(insert scatter plots)
+
+Next, I looked at the additional variables only available for products from regular search results and not the best sellers list using the dataset with only products from regular searches. This dataset includes a small proportion of best sellers.
+
+##### Number Bought in the Past Month
+
+There were {number} products displaying the number bought in the past month. Across all prodcuts displaying this information, the average number of a product bought in the past month was 738, and the median was 200. For best sellers, the average number of a product bought in the past month was 2788, and the median was 2000. For normal products the average was 704, and the median was 200. 
+
+When comparing the number bought in the past month with price, lower-priced items sold more. The item that had sold the most in the past month at the time I scraped this data was a 10 pack of cliganic mosquito repellent bracelets priced at $9.49 which had sold 40k+ units in the past month.
+
+![Number Bought by Price]
+
+##### Free Delivery
+
+99.8% of all  products in the dataset were eligible for free shipping (usually with purchases totaling $35 or more). In fact, only three products did not offer free shipping. I compared the average and median price, rating, and number of reviews for products eligible for free shipping and those that aren't, but due to the very small portion of the datset that did not offer free shipping, it is not clear if free shipping has an effect on these variables. 
+
+##### Coupon
+
+4.6% of all products offered a coupon (72 products). The average price of products offering coupons in this dataset was lower than that of products without coupons ($33.01 and $41.32 respectively), but the median price of products offering coupons was higher than that of products without coupons ($29.58 and $26.94 respectively). 
+
+The ratings for products with and without coupons were very similar: 4.47 stars with a coupon on average and 4.46 without a coupon on average. The median star rating was 4.5 with and without a coupon. 
+
+The average number of reviews for products with a coupon was 2247 and 2289 without a coupon. The median number of reviews with a coupon was 257 and 344 for product without a coupon.
 
   
 
