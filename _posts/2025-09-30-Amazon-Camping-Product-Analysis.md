@@ -98,8 +98,31 @@ Each dataset was stored as a pandas dataframe. The original, non-cleaned dataset
 
 ## Analysis
 
+I started by doing univariate analysis of key numeric variables available for all products. This included price, star rating, number of reviews, and number of words in the title. I calculated the distribution, average, and median of these values across all products, best selling products, and "normal" products. In this case, by normal I mean that the product wasn't listed as a best seller.
 
+Analysis results show that the average price of best selling products is lower than that of normal products ($22.67 vs. $41.15). The avearge price across all products was $40.28. 
 
+The star rating across all products was 4.46 on average. The average rating was slightly higher for best sellers but not by much. 
+
+Best selling products in this dataset got more reviews than normal products. The median number of reviews for best selling products was 10,967 while the median number of reviews for normal products was 328. 
+
+Across all products, the average and median number of words in the title was about 22. There was not a noticeable difference between the title length of best selling products and normal products. 
+
+(insert summary tables and histograms)
+
+Next I did bivariate analysis to compare these variables with each other, and used scatterplots to visually analyze variable relationships.
+
+The results showed that products with a higher number of reviews appeared to be priced lower (under $50). The highest priced products got very few reviews.
+
+The most expensive product in the dataset is a Retevis RT29 two-way, long-range radio. It has a 4.2 out of 5 star rating, is priced at $503.99, and has 33 reviews.
+
+The most reviewed product is a best seller priced at $14.95. It is the LifeStraw Personal Water Filter for Hiking & Camping. It has a 4.8 out of 5 star rating with 121,601 reviews. This is far more reviews than any other product in the dataset.
+
+Additionally, products with 5 star ratings tend to very few reviews. Based on the scatterplot of number of reviews vs. star rating, the most reviewed products have star ratings between 4.3 and 4.7. There were 33 products with 5 star reviews, many of which had less than 20 reviews. The 5-star-rated product with the most reviews was an an adidas 5-star 2.0 multi-use Teawm Backpack priced at $36.84.
+
+The worst-reviewed product was the "Generic Orienting Compass" with only 5 reviews and a 1.8 star rating.
+
+The number of words in a product's title did not seem to have a very significant impact on price, star rating, or the number of reviews a product received. 
 
   
 
