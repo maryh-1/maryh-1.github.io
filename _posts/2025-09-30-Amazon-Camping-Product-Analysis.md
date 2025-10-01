@@ -126,7 +126,8 @@ The worst-reviewed product was the "Generic Orienting Compass" with only 5 revie
 
 The number of words in a product's title did not seem to have a very significant impact on price, star rating, or the number of reviews a product received. 
 
-(insert scatter plots)
+The scatterplot below visualizes the relationship between these variables. The point for the most expensive productis marked in blue, and the point representing the most-reviewed product is marked in yellow.
+![scatter plots](/assets/images/scatterplots_marked.png)
 
 Next, I looked at the additional variables only available for products from regular search results and not the best sellers list using the dataset with only products from regular searches. This dataset includes a small proportion of best sellers.
 
