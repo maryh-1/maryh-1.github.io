@@ -136,7 +136,7 @@ The most reviewed product is a best seller priced at $14.95. It is the LifeStraw
 
 Additionally, products with 5 star ratings tend to very few reviews. Based on the scatterplot of number of reviews vs. star rating, the most reviewed products have star ratings between 4.3 and 4.7. There were 33 products with 5 star reviews, many of which had less than 20 reviews. The 5-star-rated product with the most reviews was an an adidas 5-star 2.0 multi-use Teawm Backpack priced at $36.84.
 
-The worst-reviewed product was the "Generic Orienting Compass" with only 5 reviews and a 1.8 star rating.
+The lowest-reviewed product was the "Generic Orienting Compass" with only 5 reviews and a 1.8 star rating.
 
 The number of words in a product's title did not seem to have a very significant impact on price, star rating, or the number of reviews a product received. 
 
