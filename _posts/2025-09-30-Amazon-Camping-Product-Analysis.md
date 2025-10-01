@@ -110,13 +110,13 @@ Best selling products in this dataset got more reviews than normal products. The
 
 Across all products, the average and median number of words in the title was about 22. There was not a noticeable difference between the title length of best selling products and normal products. 
 
-##### Price
-![Price Histogram](/assets/images/price_hist.png) 
+#### Price
 ![Price Table](/assets/images/price_table.png) 
+![Price Histogram](/assets/images/price_hist.png) 
 
-##### Rating
-![Rating Histogram](/assets/images/rating_hist.png)
+#### Rating
 ![Rating Table](/assets/images/rating_table.png)
+![Rating Histogram](/assets/images/rating_hist.png)
 
 Next I did bivariate analysis to compare these variables with each other, and used scatterplots to visually analyze variable relationships.
 
