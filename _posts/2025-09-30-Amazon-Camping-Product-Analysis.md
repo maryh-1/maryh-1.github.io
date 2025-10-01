@@ -98,7 +98,7 @@ Each dataset was stored as a pandas dataframe. The original, non-cleaned dataset
 
 ## Analysis
 
-##### Price, Rating, Number of Reviews, and Numnber of Words in the Title
+##### Price, Rating, Number of Reviews, and Number of Words in the Title
 
 I started by doing univariate analysis of key numeric variables available for all products. This included price, star rating, number of reviews, and number of words in the title. I calculated the distribution, average, and median of these values across all products, best selling products, and "normal" products. In this case, by normal I mean that the product wasn't listed as a best seller.
 
