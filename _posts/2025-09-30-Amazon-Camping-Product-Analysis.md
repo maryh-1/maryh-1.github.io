@@ -94,7 +94,7 @@ Lastly, when datasets that were extracted from different URL's were merged, the 
 
 Each dataset was stored as a pandas dataframe. The original, non-cleaned datasets of scraped data were retained as backups, and cleaned datasets were stored as new dataframes. A snippet of each cleaned and preprocessed dataframe can be seen below.
 
-
+![Camping Product Data Dataframe](https://github.com/maryh-1/maryh-1.github.io/blob/master/_posts/camping_product_data.png)
 
 ## Analysis
 
