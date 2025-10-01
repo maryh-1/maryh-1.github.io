@@ -118,6 +118,14 @@ Across all products, the average and median number of words in the title was abo
 ![Rating Table](/assets/images/rating_table.png)
 ![Rating Histogram](/assets/images/rating_hist.png)
 
+#### Number of Reviews
+![Reviews Table](/assets/images/reviews_table.png)
+![Reviews Histogram](/assets/images/reviews_hist.png)
+
+#### Number of Words in Title
+![Words Table](/assets/images/words_table.png)
+![Words Histogram](/assets/images/words_hist.png)
+
 Next I did bivariate analysis to compare these variables with each other, and used scatterplots to visually analyze variable relationships.
 
 The results showed that products with a higher number of reviews appeared to be priced lower (under $50). The highest priced products got very few reviews.
