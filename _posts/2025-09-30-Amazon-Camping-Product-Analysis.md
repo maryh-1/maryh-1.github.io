@@ -136,7 +136,7 @@ There were {number} products displaying the number bought in the past month. Acr
 
 When comparing the number bought in the past month with price, lower-priced items sold more. The item that had sold the most in the past month at the time I scraped this data was a 10 pack of cliganic mosquito repellent bracelets priced at $9.49 which had sold 40k+ units in the past month.
 
-![Number Bought by Price](/assetsimages/Number%20bought%20by%20Price.png)
+![Number Bought by Price](/assets/images/Number%20bought%20by%20Price.png)
 
 ##### Free Delivery
 
