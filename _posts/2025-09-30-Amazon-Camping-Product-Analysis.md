@@ -165,6 +165,22 @@ The ratings for products with and without coupons were very similar: 4.47 stars 
 
 The average number of reviews for products with a coupon was 2247 and 2289 without a coupon. The median number of reviews with a coupon was 257 and 344 for product without a coupon.
 
+## Text Analysis
+
+One of the tools available to Amazon product sellers is choosing the title and keywords displayed on their product listing to help their product appear in more search results. This will hopefully lead to more exposure for their product and, subsequenty, more sales. As noted earlier, the average number of words in each title for the products in this dataset was 22. This did not differ between best selling and normal products. 
+
+The following text analysis further explores which words are present most often in product titles. The analysis breaks down most common terms by singular words (1-grams), sets of two words together (2-grams), sets of three words together (3-grams), and sequences of four words together (4-grams) and counts the occurences of each n-gram.
+
+Even with best sellers added from the best sellers list, there are less best selling product titles to analyze than normal product titles. There were a total 74 best selling product titles and 1513 normal product titles. 
+
+Across all titles, the most common words were 'for', 'Camping', 'with', and 'Hiking'. Although 'for' might seem like a stop work that should be taken out, phrases like 'for women' and 'for men' seem to be very common in Amazon product titles, so for that reason, I've left 'for' in the words list. 
+
+Next, I looked at 2-grams, 3-grams, and 4-grams. 
+
+
+
+
+
   
 
 
