@@ -221,9 +221,7 @@ A few of the key findings include the following:
 * 97.7% of product titles included a "for" phrase. The most common "for" phrases were "for Camping", "for Camping and Hiking", "for Men" and "for Women".
 * The word sequence "Camping" and "Hiking" is a more common than "Hiking" and "Camping"
 
-One limitation of this analysis is the small number of best-selling products in the dataset. Although added more by scraping product data directly from the best sellers page, there still ended up being a small portion of best-selling product data. Due to this limitation, I wouldn't apply the comparisons of best-selling and non-best selling products found here across all products on Amazon's website. However, with more data, this analysis could be improved to have stronger confidence in the best selling vs. normal product comparisons. 
-
-
+One limitation of this analysis is the small number of best-selling products in the dataset. Although added more by scraping product data directly from the best sellers page, there still ended up being a small portion of best-selling product data. Due to this limitation, I wouldn't apply the comparisons of best-selling and non-best selling products found here across all products on Amazon's website. However, with more data, this analysis could be improved to have stronger confidence in the best selling vs. normal product comparisons, and this type of analysis could be applied to products in other product categories to generate more insights about products sold on Amazon.
 
 
 
