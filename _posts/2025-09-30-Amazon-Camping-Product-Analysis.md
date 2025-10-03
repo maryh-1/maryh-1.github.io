@@ -219,7 +219,7 @@ A few of the key findings include the following:
 * 4.6% of products offered a coupon
 * There were an average of 22 words in each product title.
 * 97.7% of product titles included a "for" phrase. The most common "for" phrases were "for Camping", "for Camping and Hiking", "for Men" and "for Women".
-* When the words "Camping" and "Hiking" is a more common word sequence than "Hiking" and "Camping"
+* The word sequence "Camping" and "Hiking" is a more common than "Hiking" and "Camping"
 
 
 
