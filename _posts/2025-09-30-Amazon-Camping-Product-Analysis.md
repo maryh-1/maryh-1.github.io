@@ -214,12 +214,14 @@ By analyzing numeric variables, categorical variables, and title text, it was po
 A few of the key findings include the following:
 *The average price across all products was $40.28, and best selling products tended to be priced lower than non-best sellling products. Lower-priced products also tended to have sold more in the past month. 
 *The average star rating was 4.46 stars out of 5, and the majority of all products hovered around this rating. 
-*In this dataset, beset selling products tended to get more reviews than non-best selling products. 
+*In this dataset, best selling products tended to get more reviews than non-best selling products. 
 *99.8% of products offered free shipping
 *4.6% of products offered a coupon
 *There were an average of 22 words in each product title.
 *97.7% of product titles included a "for" phrase. The most common "for" phrases were "for Camping", "for Camping and Hiking", "for Men" and "for Women".
 *When the words "Camping" and "Hiking" is a more common word sequence than "Hiking" and "Camping"
+
+
 
 
 
