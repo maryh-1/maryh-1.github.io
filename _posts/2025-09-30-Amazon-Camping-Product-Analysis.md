@@ -193,10 +193,19 @@ Even with best sellers added from the best sellers list, there were less best se
 ##### 4-grams
 ![fourgrams](/assets/images/fourgrams_table.png)
 
+The most common word to appear in product titles was "for". The word appeard in 97.7% of product titles in this dataset. 
 
+Some phrases with the word "for" were more common than others. The most common phrase across all products, was "for Camping". The phrase "for Camping" (259) appeared more often than "for Hiking" (77). "Camping" and "Hiking" often appeared together, and phrases including the words "for", "Camping", and  "Hiking" were also common. However, it is more likely to see these words with "Camping" listed before "Hiking". 
+* (Camping, Hiking) - 154 occurences vs. (Hiking, Camping) - 68 occurences
+* (for, Camping, Hiking) - 73 occurences vs. (for, Hiking, Camping) 23 occurences
 
+Other popular "for" phrases included phrases identifying who the target product customer. The phrases "for Men" (129), "for Women" (79), and "for, Men, Women" (77) were all popular phrases, with "for Men" being more likely than "for Women".
 
+Phrases identifying the product purpose like "for Outdoor" (97), "for Outdoor Camping" (27), and "for, Camping, Backpacking" (22) were also common.
 
+A few other popular words among camping and hiking product titles were "Portable" (352), "Travel" (326), "Lightweight" (315), and "Bag"(298).
+
+The n-gram counts for only best selling product titles were quite a bit lower than the counts for normal product titles. Some of the most likely bigrams and trigrams for best selling products only were "for Lunch" (6), "Ice Packs for" (4), and "Insect Repellent" (9). Due to the small portion of best selling products in the dataset, these n-gram counts could reflect a few popular products like insect repellent or ice packs. While these are best selling products in the camping and hiking category, I speculate that these may be best selling products because they are commonly used even outside of camping and hiking.
   
 
 
