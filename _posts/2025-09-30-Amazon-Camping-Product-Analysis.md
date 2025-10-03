@@ -206,6 +206,25 @@ Phrases identifying the product purpose like "for Outdoor" (97), "for Outdoor Ca
 A few other popular words among camping and hiking product titles were "Portable" (352), "Travel" (326), "Lightweight" (315), and "Bag"(298).
 
 The n-gram counts for only best selling product titles were quite a bit lower than the counts for normal product titles. Some of the most likely bigrams and trigrams for best selling products only were "for Lunch" (6), "Ice Packs for" (4), and "Insect Repellent" (9). Due to the small portion of best selling products in the dataset, these n-gram counts could reflect a few popular products like insect repellent or ice packs. While these are best selling products in the camping and hiking category, I speculate that these may be best selling products because they are commonly used even outside of camping and hiking.
+
+## Summary
+
+By analyzing numeric variables, categorical variables, and title text, it was possible to extract a insights on camping and hiking products listed on Amazon.com, including a few differences between best selling and non-best selling products.
+
+A few of the key findings include the following:
+*The average price across all products was $40.28, and best selling products tended to be priced lower than non-best sellling products. Lower-priced products also tended to have sold more in the past month. 
+*The average star rating was 4.46 stars out of 5, and the majority of all products hovered around this rating. 
+*In this dataset, beset selling products tended to get more reviews than non-best selling products. 
+*99.8% of products offered free shipping
+*4.6% of products offered a coupon
+*There were an average of 22 words in each product title.
+*97.7% of product titles included a "for" phrase. The most common "for" phrases were "for Camping", "for Camping and Hiking", "for Men" and "for Women".
+*When the words "Camping" and "Hiking" is a more common word sequence than "Hiking" and "Camping"
+
+
+
+
+
   
 
 
