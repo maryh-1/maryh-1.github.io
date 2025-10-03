@@ -169,13 +169,29 @@ The average number of reviews for products with a coupon was 2247 and 2289 witho
 
 One of the tools available to Amazon product sellers is choosing the title and keywords displayed on their product listing to help their product appear in more search results. This will hopefully lead to more exposure for their product and, subsequenty, more sales. As noted earlier, the average number of words in each title for the products in this dataset was 22. This did not differ between best selling and normal products. 
 
-The following text analysis further explores which words are present most often in product titles. The analysis breaks down most common terms by singular words (1-grams), sets of two words together (2-grams), sets of three words together (3-grams), and sequences of four words together (4-grams) and counts the occurences of each n-gram.
+The following text analysis further explores which words are present most often in product titles. The analysis breaks down most common terms by singular words (1-grams), sets of two words together (2-grams), sets of three words together (3-grams), and sequences of four words together (4-grams) and counts the occurences of each n-gram. I used the nltk library and collections library to tokenize the each title, remove stopwords like "and" and "with", and count the frequency of each n-gram. I did decide to keep the word "for" which is usually removed as a stopword. I did this because many Amazon sellers include a phrase like "for Men", "for Women", or "for Camping" in their product titles, and I wanted to be able to evaluate these phrases. A snippet of the code I used for text analysis can be seen below.
 
-Even with best sellers added from the best sellers list, there are less best selling product titles to analyze than normal product titles. There were a total 74 best selling product titles and 1513 normal product titles. 
+{%highlight python %}
 
-Across all titles, the most common words were 'for', 'Camping', 'with', and 'Hiking'. Although 'for' might seem like a stop work that should be taken out, phrases like 'for women' and 'for men' seem to be very common in Amazon product titles, so for that reason, I've left 'for' in the words list. 
+for title in Titles:
+    tokenized_title = title.split()
+    filtered_tokenized_title = [word for word in tokenized_title if word not in stop_words]
+    bigrams = list(ngrams(filtered_tokenized_title, 2))
+    for bigram in bigrams:
+        bigrams_list.append(bigram)
 
-Next, I looked at 2-grams, 3-grams, and 4-grams. 
+{% endhighlight %}
+
+Even with best sellers added from the best sellers list, there were less best selling product titles to analyze than normal product titles. There were a total 74 best selling product titles and 1513 normal product titles. Because of this, the most popular n-grams across all products and "normal" products were very similar. The following tables show the top ten most popular n-grams among best selling products, normal products, and all products. 
+
+##### 1-grams
+![Unigrams](/assets/images/unigrams_table.png)
+##### 2-grams
+![Bigrams](/assets/images/bigrams_table.png)
+##### 3-grams
+![trigrams](/assets/images/trigrams_table.png)
+##### 4-grams
+![fourgrams](/assets/images/fourgrams_table.png)
 
 
 
