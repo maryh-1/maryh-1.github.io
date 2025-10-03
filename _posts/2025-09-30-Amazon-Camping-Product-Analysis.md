@@ -212,14 +212,14 @@ The n-gram counts for only best selling product titles were quite a bit lower th
 By analyzing numeric variables, categorical variables, and title text, it was possible to extract a insights on camping and hiking products listed on Amazon.com, including a few differences between best selling and non-best selling products.
 
 A few of the key findings include the following:
-*The average price across all products was $40.28, and best selling products tended to be priced lower than non-best sellling products. Lower-priced products also tended to have sold more in the past month. 
-*The average star rating was 4.46 stars out of 5, and the majority of all products hovered around this rating. 
-*In this dataset, best selling products tended to get more reviews than non-best selling products. 
-*99.8% of products offered free shipping
-*4.6% of products offered a coupon
-*There were an average of 22 words in each product title.
-*97.7% of product titles included a "for" phrase. The most common "for" phrases were "for Camping", "for Camping and Hiking", "for Men" and "for Women".
-*When the words "Camping" and "Hiking" is a more common word sequence than "Hiking" and "Camping"
+* The average price across all products was $40.28, and best selling products tended to be priced lower than non-best sellling products. Lower-priced products also tended to have sold more in the past month. 
+* The average star rating was 4.46 stars out of 5, and the majority of all products hovered around this rating. 
+* In this dataset, best selling products tended to get more reviews than non-best selling products. 
+* 99.8% of products offered free shipping
+* 4.6% of products offered a coupon
+* There were an average of 22 words in each product title.
+* 97.7% of product titles included a "for" phrase. The most common "for" phrases were "for Camping", "for Camping and Hiking", "for Men" and "for Women".
+* When the words "Camping" and "Hiking" is a more common word sequence than "Hiking" and "Camping"
 
 
 
