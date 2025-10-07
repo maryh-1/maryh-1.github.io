@@ -1,5 +1,6 @@
 ---
 title:  "Advanced examples"
+published: False
 mathjax: true
 layout: post
 categories: media
