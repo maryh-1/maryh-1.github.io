@@ -147,7 +147,7 @@ Next, I looked at the additional variables only available for products from regu
 
 ##### Number Bought in the Past Month
 
-There were {number} products displaying the number bought in the past month. Across all prodcuts displaying this information, the average number of a product bought in the past month was 738, and the median was 200. For best sellers, the average number of a product bought in the past month was 2788, and the median was 2000. For normal products the average was 704, and the median was 200. 
+There were 980 products displaying the number bought in the past month. Across all prodcuts displaying this information, the average number of a product bought in the past month was 738, and the median was 200. For best sellers, the average number of a product bought in the past month was 2788, and the median was 2000. For normal products the average was 704, and the median was 200. 
 
 When comparing the number bought in the past month with price, lower-priced items sold more. The item that had sold the most in the past month at the time I scraped this data was a 10 pack of cliganic mosquito repellent bracelets priced at $9.49 which had sold 40k+ units in the past month.
 
