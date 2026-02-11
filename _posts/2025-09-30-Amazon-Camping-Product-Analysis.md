@@ -32,53 +32,55 @@ Products listed on the best sellers page included a little less information in t
 Some of the data was extracted using patterns in the product text and the requests_html .search() functionality. For example, product star ratings were always written in the form "{rating} out of 5 stars", so this information was easy to extract directly in python before putting the data in a dataframe. Other information like free delivery and coupon availability was extracted from the entire text output in the cleaning and preprocessing stage. Most of the data was extracted from each product listing's text output except for the title and ASIN. The ASIN was not displayed in the product text, so I pulled into from another part of the html. The title was displayed in the product text but due to each title's differing length and verbage, I found it easier to extract the complete title from another part of the html. "Try" and "except" was used to keep the scraper running when a product didn't display certain information, and 'NA' was inserted for unavailable data. 
 
   {% highlight python linenos %}
-  response = session.get(url)
-  response.html.render(sleep=2)
-  products = response.html.find(parent_selector)
-
-  while page_number < 50:
   
-    for product in products:
-          product_inf = {}
-          try:
-              asin = str(product)
-              asin = asin[asin.find('amzn1.asin.')+11:]
-              asin = asin[:asin.find("'")]
-              product_inf['asin'] = asin
-          except:
-              product_inf['asin'] = 'NA'
-          try:
-              title = product.find(title_sel)
-              title = str(title)
-              title = title[title.find('label=')+7:title.find('class=')-2]
-              product_inf['title'] = title
-          except:
-              product_inf['title'] = 'NA'
-          try:
-              number_bought = str(product.search('{number} bought in past month')['number'])[-4:]
-              product_inf['number_bought'] = number_bought
-          except:
-              product_inf['number_bought'] = 'NA'
-          try:
-              rating = str(product.search('{number} out of 5 stars')['number'])[-3:]
-              product_inf['rating'] = rating
-          except:
-              product_inf['rating'] = 'NA'
-          try:
-              number_reviews = str(product.search('aria-label="{number} ratings"')['number'])[-9:]
-              product_inf['number_reviews'] = number_reviews
-          except:
-              product_inf['number_reviews'] = 'NA'
-          try:
-              product_inf['page_number'] = page_number
-              product_inf['text'] = product.text
-          except:
-              product_inf['text'] = 'NA'
-          data.append(product_inf)
-      page_number += 1
-      url = response.html.next()
-  else:
-    df = pd.DataFrame(data)
+    response = session.get(url)
+    response.html.render(sleep=2)
+    products = response.html.find(parent_selector)
+  
+    while page_number < 50:
+    
+      for product in products:
+            product_inf = {}
+            try:
+                asin = str(product)
+                asin = asin[asin.find('amzn1.asin.')+11:]
+                asin = asin[:asin.find("'")]
+                product_inf['asin'] = asin
+            except:
+                product_inf['asin'] = 'NA'
+            try:
+                title = product.find(title_sel)
+                title = str(title)
+                title = title[title.find('label=')+7:title.find('class=')-2]
+                product_inf['title'] = title
+            except:
+                product_inf['title'] = 'NA'
+            try:
+                number_bought = str(product.search('{number} bought in past month')['number'])[-4:]
+                product_inf['number_bought'] = number_bought
+            except:
+                product_inf['number_bought'] = 'NA'
+            try:
+                rating = str(product.search('{number} out of 5 stars')['number'])[-3:]
+                product_inf['rating'] = rating
+            except:
+                product_inf['rating'] = 'NA'
+            try:
+                number_reviews = str(product.search('aria-label="{number} ratings"')['number'])[-9:]
+                product_inf['number_reviews'] = number_reviews
+            except:
+                product_inf['number_reviews'] = 'NA'
+            try:
+                product_inf['page_number'] = page_number
+                product_inf['text'] = product.text
+            except:
+                product_inf['text'] = 'NA'
+            data.append(product_inf)
+        page_number += 1
+        url = response.html.next()
+    else:
+      df = pd.DataFrame(data)
+    
   {% endhighlight %}
 
 
