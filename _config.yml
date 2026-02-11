@@ -25,7 +25,7 @@ author:
   # Biographic information
   avatar           : "/images/portrait.JPG"
   name             : "Mary Hart"
-  pronouns         : "# example: "she/her"  
+  pronouns         : # example: "she/her"  
   bio              : "Data Scientist"
   location         : "Earth"
   employer         : "Red Brick University"
