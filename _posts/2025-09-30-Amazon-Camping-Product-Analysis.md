@@ -4,6 +4,8 @@ mathjax: true
 layout: post
 categories: media
 ---
+{% include toc %}
+
 ![AMZN logo](/images/amzn.png)
 ## Overview
 
