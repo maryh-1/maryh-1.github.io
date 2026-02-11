@@ -23,7 +23,7 @@ repository               : "maryh-1/maryh-1.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "/images/portrait.png"
+  avatar           : "images/portrait.png"
   name             : "Mary Hart"
   pronouns         : # example: "she/her"  
   bio              : "Data Scientist"
