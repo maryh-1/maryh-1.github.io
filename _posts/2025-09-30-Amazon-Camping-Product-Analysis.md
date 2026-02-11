@@ -4,7 +4,7 @@ mathjax: true
 layout: post
 categories: media
 ---
-
+![AMZN logo](/images/amzn.png)
 ## Overview
 
 This project aims to extract insights about products sold on Amazon using publicly available data found in Amazon product listings. Due to the immense amount of products available on Amazon, I narrowed down the project to focus on Camping & Hiking related products. The goal is to identify characteristics that differentiate best selling products from the rest, which could serve as useful information for Amazon sellers. The process involved scraping the intial datset from Amazon.com, cleaning and preprocessing the scraped data, and finally analyzing it for insights.
