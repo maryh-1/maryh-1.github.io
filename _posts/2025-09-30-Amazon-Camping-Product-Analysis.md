@@ -181,7 +181,6 @@ for title in Titles:
     bigrams = list(ngrams(filtered_tokenized_title, 2))
     for bigram in bigrams:
         bigrams_list.append(bigram)
-
 {% endhighlight %}
 
 Even with best sellers added from the best sellers list, there were less best selling product titles to analyze than normal product titles. There were a total 74 best selling product titles and 1513 normal product titles. Because of this, the most popular n-grams across all products and "normal" products were very similar. The following tables show the top ten most popular n-grams among best selling products, normal products, and all products. 
