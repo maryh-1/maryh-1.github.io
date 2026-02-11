@@ -1,6 +1,6 @@
 ---
 title:  "Stock Comparison Dashboard"
-layout: post
+layout: single
 ---
 
 
