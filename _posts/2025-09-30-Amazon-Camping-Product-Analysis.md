@@ -1,7 +1,7 @@
 ---
 title:  "Amazon Camping & Hiking Products Analysis"
 mathjax: true
-layout: post
+layout: default
 categories: media
 ---
 {% include toc %}
