@@ -1,5 +1,5 @@
 ---
-permalink: /
+permalink: /about-me/
 title: "Portfolio Website"
 author_profile: true
 redirect_from: 
