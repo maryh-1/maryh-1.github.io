@@ -27,9 +27,9 @@ author:
   name             : "Mary Hart"
   pronouns         : # example: "she/her"  
   bio              : "Data Scientist"
-  location         : "Earth"
+  location         : 
   employer         : "University of Pittsburgh"
-  employer         : "University of Illinois at Urbana-Champaign"
+  employer         : "University of Illinois"
   uri              : # URL
   email            : "none@example.org" 
 
