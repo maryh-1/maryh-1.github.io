@@ -145,7 +145,7 @@ The lowest-reviewed product was the "Generic Orienting Compass" with only 5 revi
 The number of words in a product's title did not seem to have a very significant impact on price, star rating, or the number of reviews a product received. 
 
 The scatterplot below visualizes the relationship between these variables. The point for the most expensive productis marked in blue, and the point representing the most-reviewed product is marked in yellow.
-![scatter plots](/assets/images/scatterplots_marked.png)
+![scatter plots](/images/scatterplots_marked.png)
 
 Next, I looked at the additional variables only available for products from regular search results and not the best sellers list using the dataset with only products from regular searches. This dataset includes a small proportion of best sellers.
 
@@ -155,7 +155,7 @@ There were 980 products displaying the number bought in the past month. Across a
 
 When comparing the number bought in the past month with price, lower-priced items sold more. The item that had sold the most in the past month at the time I scraped this data was a 10 pack of cliganic mosquito repellent bracelets priced at $9.49 which had sold 40k+ units in the past month.
 
-![Number Bought by Price](/assets/images/Number%20bought%20by%20Price.png)
+![Number Bought by Price](/images/Number%20bought%20by%20Price.png)
 
 ##### Free Delivery
 
@@ -189,13 +189,13 @@ for title in Titles:
 Even with best sellers added from the best sellers list, there were less best selling product titles to analyze than normal product titles. There were a total 74 best selling product titles and 1513 normal product titles. Because of this, the most popular n-grams across all products and "normal" products were very similar. The following tables show the top ten most popular n-grams among best selling products, normal products, and all products. 
 
 ##### 1-grams
-![Unigrams](/assets/images/unigrams_table.png)
+![Unigrams](/images/unigrams_table.png)
 ##### 2-grams
-![Bigrams](/assets/images/bigrams_table.png)
+![Bigrams](/images/bigrams_table.png)
 ##### 3-grams
-![trigrams](/assets/images/trigrams_table.png)
+![trigrams](/images/trigrams_table.png)
 ##### 4-grams
-![fourgrams](/assets/images/fourgrams_table.png)
+![fourgrams](/images/fourgrams_table.png)
 
 The most common word to appear in product titles was "for". The word appeard in 97.7% of product titles in this dataset. 
 
