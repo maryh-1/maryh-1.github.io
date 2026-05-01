@@ -90,7 +90,45 @@ For some behavior-specific crash rates the actual and predicted values were simi
 ![Alcohol Usage During Crash Rate](/images/ALCOHOL_USAGE_sarimax.png)
 
 
-The Difference-in-Difference models attempt to measure the causality of the pandemic on changes in driver behaviors measured by crash rates. Similar to the SARIMAX models, I made these models for the overall crash rate and crash rates involving specific driver behavior, using loops to create the models. Most of the models did not show any statistically significant changes in driver behavior as a result of the COVID-19 pandemic, except for a few, which noted decreases in crash rates. This could be interpreted by saying the COVID pandemic caused improvements to crash rates and driver behavior involved in crashes. However, when viewing the downward trend is crashes overall over the past twenty years, even with statistically significant causal models, it is more likely that the improvement in the crash rate is due to a continuous trend in reduced crashes over the past two decades. To test this, I performed the DiD models again, this time using only data from the past ten years, making the downward trend in crashes less significant. Using this data, none of the models were statistically significant. Therefore, I would use the results of the DiD models to conclude that there is not enough evidence to determine that COVID has had any effect on driver behavior but driver behavior as indicated by crash rates has been improving over the past twenty years. 
+The Difference-in-Difference models attempt to measure the causality of the pandemic on changes in driver behaviors measured by crash rates. Similar to the SARIMAX models, I made these models for the overall crash rate and crash rates involving specific driver behavior, using loops to create the models. 
+
+{% highlight python linenos %}
+    models_info = []
+for variable in variables:
+
+    print(variable)
+    
+    model = smf.ols(
+        formula = f"{variable} ~ post + Treated + did + C(county_name) + C(year)",
+        data = county_crash_data
+    ).fit(cov_type='cluster', cov_kwds={'groups': county_crash_data['county_name']})
+    
+    print(model.summary())
+
+    model_info = {"Model": variable, 
+    "R-Squared": model.rsquared, 
+    "DiD_PValue": model.pvalues['did'], 
+    "DiD_Coeff": model.params['did']}
+    models_info.append(model_info)
+    
+    avg = county_crash_data.groupby(['Treated', 'post'])[variable].mean().reset_index()
+    
+    plt.figure(figsize=(7,5))
+    for treated in [0,1]:
+        subset = avg[avg['Treated'] == treated]
+        label = "Treated (more affected) " if treated == 1 else "Control (less affected)"
+        plt.plot(subset["post"], subset[variable], marker='o', label=label)
+    
+    plt.xticks([0,1], ['Pre-COVID', 'Post-COVID'])
+    plt.ylabel(variable)
+    plt.title(f"Difference-in-Difference: {variable}-Related Crashes in Pennsylvania")
+    plt.legend()
+    plt.show()
+
+{% endhighlight %}
+
+
+Most of the models did not show any statistically significant changes in driver behavior as a result of the COVID-19 pandemic, except for a few, which noted decreases in crash rates. This could be interpreted by saying the COVID pandemic caused improvements to crash rates and driver behavior involved in crashes. However, when viewing the downward trend is crashes overall over the past twenty years, even with statistically significant causal models, it is more likely that the improvement in the crash rate is due to a continuous trend in reduced crashes over the past two decades. To test this, I performed the DiD models again, this time using only data from the past ten years, making the downward trend in crashes less significant. Using this data, none of the models were statistically significant. Therefore, I would use the results of the DiD models to conclude that there is not enough evidence to determine that COVID has had any effect on driver behavior but driver behavior as indicated by crash rates has been improving over the past twenty years. 
 
 It is notable that the methodology for selecting a control group for the DiD models was not perfect. The results of the DiD models would be more robust and impactful if a better method for identifying control group counties was employed, and the DiD models should be interpreted with that in mind. 
 
