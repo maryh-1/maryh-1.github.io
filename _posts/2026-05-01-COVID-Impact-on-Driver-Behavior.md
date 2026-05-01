@@ -17,7 +17,12 @@ A final dataset used for this project was a table of driver miles travelled by y
 
 Before modeling, I performed preliminary data exploration. I calculated the total number of crashes and visualized crashes per year and crashes per year with a specific driver behavior using bar charts. These charts helped to show overall trends in crash rates and trends in driver behavior involved with crashes such as increased cell phone usage involved in car crashes and a reduced number of crashes involving speeding. Because the dataset included crash data from the past twenty years, it was also possible to see long-standing trends that have occurred over the past two decades as opposed to changes in crash rates specifically around the COVID-19 pandemic timeline. 
 
-Data Preparation
+![crashes per year](/images/crashes_per_year.png)
+![cell phone usage](/images/cell_phone_usage.png)
+![drug related crashes](/images/drug_related_crashes.png)
+![speeding](/images/speeding_crashes.png)
+
+### Data Preparation
 
 
 Firstly, the data needed to be combined into one dataset. The data was originally in separate tables by year, so I added a year variable and combined the relevant data into one dataset. 
