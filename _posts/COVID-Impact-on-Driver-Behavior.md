@@ -37,45 +37,45 @@ The SARIMAX models use past crash rate data to predict future crash rates. I use
 To make these models, I used the pmdarima package in python which tests multiple SARIMAX models and outputs the one with the best AIC. I did this for a model with overall crash rates and multiple models for crash rates involving specific driver behaviors, using loops to create models from multiple crash rates and output their results using one code block. 
 
 {% highlight python linenos %}
-# Create SARIMA model with seasonality adjustment for months; Let model tind best (p,d,q)
-columns= ['TOTAL_FATALITIES','AGGRESSIVE_DRIVING', 'ALCOHOL_RELATED', 'CELL_PHONE', 'DISTRACTED', 'DRINKING_DRIVER', 'DRUG_RELATED', 'DRUGGED_DRIVER', 'FATAL', 'FATIGUE_ASLEEP', 'ILLEGAL_DRUG_RELATED', 'IMPAIRED_DRIVER', 'IMPAIRED_NONMOTORIST', 'INJURY', 'MARIJUANA_DRUGGED_DRIVER', 'MARIJUANA_RELATED', 'MATURE_DRIVER', 'MC_DRINKING_DRIVER', 'OPIOID_RELATED', 'SPEEDING', 'SPEEDING_RELATED', 'TAILGATING', 'URBAN', 'YOUNG_DRIVER', 'UNBELTED']
-#identify y as crashrate
-
-for variable in columns:
-    y = Crash_Rates_All[variable]
-    train = y[y.index < '2020-03-01']
-    test = y[y.index >= '2020-03-01']
+    # Create SARIMA model with seasonality adjustment for months; Let model tind best (p,d,q)
+    columns= ['TOTAL_FATALITIES','AGGRESSIVE_DRIVING', 'ALCOHOL_RELATED', 'CELL_PHONE', 'DISTRACTED', 'DRINKING_DRIVER', 'DRUG_RELATED', 'DRUGGED_DRIVER', 'FATAL', 'FATIGUE_ASLEEP', 'ILLEGAL_DRUG_RELATED', 'IMPAIRED_DRIVER', 'IMPAIRED_NONMOTORIST', 'INJURY', 'MARIJUANA_DRUGGED_DRIVER', 'MARIJUANA_RELATED', 'MATURE_DRIVER', 'MC_DRINKING_DRIVER', 'OPIOID_RELATED', 'SPEEDING', 'SPEEDING_RELATED', 'TAILGATING', 'URBAN', 'YOUNG_DRIVER', 'UNBELTED']
+    #identify y as crashrate
     
-    model = pm.auto_arima(
-        train,
-        seasonal=True,
-        m=12,
-        trace=True,
-        error_action='ignore',
-        suppress_warnings=True,
-        stepwise=True)
+    for variable in columns:
+        y = Crash_Rates_All[variable]
+        train = y[y.index < '2020-03-01']
+        test = y[y.index >= '2020-03-01']
+        
+        model = pm.auto_arima(
+            train,
+            seasonal=True,
+            m=12,
+            trace=True,
+            error_action='ignore',
+            suppress_warnings=True,
+            stepwise=True)
+        
+        print(model.summary())
+        
+        # Based on Model, predict post-covid crash rate
+        n_periods = len(test)
+        forecast, conf_int = model.predict(n_periods, return_conf_int=True)
+        forecast_index = test.index
+        
+        forecast_series = pd.Series(forecast, index=forecast_index)
     
-    print(model.summary())
-    
-    # Based on Model, predict post-covid crash rate
-    n_periods = len(test)
-    forecast, conf_int = model.predict(n_periods, return_conf_int=True)
-    forecast_index = test.index
-    
-    forecast_series = pd.Series(forecast, index=forecast_index)
-
-    title = f"Pennsylvania, {variable} Rates: Pre-COVID Forecast vs. Post-COVID Actuals"
-    
-    plt.figure(figsize=(12,6))
-    plt.plot(train.index, train, label='Train (Pre-Covid)')
-    plt.plot(test.index, test, label='Actual (Post-Covid)', color='black')
-    plt.plot(forecast_index, forecast_series, label='Forecasted (Expecected if no COVID)', color='red')
-    plt.fill_between(forecast_index, conf_int[:, 0], conf_int[:, 1], color='pink', alpha=0.3, label='95% CI')
-    plt.axvline(pd.Timestamp('2020-03-01'), color='gray', linestyle='--', label='COVID Start')
-    plt.legend()
-    plt.title(title)
-    plt.show()
-    plt.savefig(f"{variable}_sarimax.png")
+        title = f"Pennsylvania, {variable} Rates: Pre-COVID Forecast vs. Post-COVID Actuals"
+        
+        plt.figure(figsize=(12,6))
+        plt.plot(train.index, train, label='Train (Pre-Covid)')
+        plt.plot(test.index, test, label='Actual (Post-Covid)', color='black')
+        plt.plot(forecast_index, forecast_series, label='Forecasted (Expecected if no COVID)', color='red')
+        plt.fill_between(forecast_index, conf_int[:, 0], conf_int[:, 1], color='pink', alpha=0.3, label='95% CI')
+        plt.axvline(pd.Timestamp('2020-03-01'), color='gray', linestyle='--', label='COVID Start')
+        plt.legend()
+        plt.title(title)
+        plt.show()
+        plt.savefig(f"{variable}_sarimax.png")
 
 {% endhighlight %}
 
