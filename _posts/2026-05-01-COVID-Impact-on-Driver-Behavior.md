@@ -81,13 +81,13 @@ To make these models, I used the pmdarima package in python which tests multiple
 
 For some behavior-specific crash rates the actual and predicted values were similar, showing that COVID likely did not correlate with any change in those driver behaviors. However, other behavior-specific crash rates showed noticeable deviations from the expected rates. These included drug-related crashes, crashes involving cell-phone usage, crashes involving alcohol, and fatal crashes. All of the actual crash rates involving these crash characteristics were higher than predicted except for the crash rate involving alcohol usage, which was lower than predicted. The outputs of these models helped to show which driver behaviors may have worsened post-COVID but also indicated that some driver behaviors may have improved. 
 
-![Drug Related Crash Rate](/images/DRUG_RELATED_sarimax.png)
+![Drug Related Crash Rate](/images/Drug_Related.png)
 
-![Fatal Crash Rate](/images/FATAL_sarimax.png)
+![Fatal Crash Rate](/images/Fatal.png)
 
-![Cell Phone Usage During Crash Rate](/images/CELL_PHONE_sarimax.png)
+![Cell Phone Usage During Crash Rate](/images/Cell_Phone.png)
 
-![Alcohol Usage During Crash Rate](/images/ALCOHOL_RELATED_sarimax.png)
+![Alcohol Usage During Crash Rate](/images/Alcohol_Related.png)
 
 
 The Difference-in-Difference models attempt to measure the causality of the pandemic on changes in driver behaviors measured by crash rates. Similar to the SARIMAX models, I made these models for the overall crash rate and crash rates involving specific driver behavior, using loops to create the models. 
