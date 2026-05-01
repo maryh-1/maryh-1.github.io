@@ -38,6 +38,15 @@ To make these models, I used the pmdarima package in python which tests multiple
 
 For some behavior-specific crash rates the actual and predicted values were similar, showing that COVID likely did not correlate with any change in those driver behaviors. However, other behavior-specific crash rates showed noticeable deviations from the expected rates. These included drug-related crashes, crashes involving cell-phone usage, crashes involving alcohol, and fatal crashes. All of the actual crash rates involving these crash characteristics were higher than predicted except for the crash rate involving alcohol usage, which was lower than predicted. The outputs of these models helped to show which driver behaviors may have worsened post-COVID but also indicated that some driver behaviors may have improved. 
 
+![Drug Related Crash Rate](/images/DRUG_RELATED_sarimax.png)
+
+![Fatal Crash Rate](/images/FATAL_sarimax.png)
+
+![Cell Phone Usage During Crash Rate](/images/CELL_PHONE_sarimax.png)
+
+![Alcohol Usage During Crash Rate](/images/ALCOHOL_USAGE_sarimax.png)
+
+
 The Difference-in-Difference models attempt to measure the causality of the pandemic on changes in driver behaviors measured by crash rates. Similar to the SARIMAX models, I made these models for the overall crash rate and crash rates involving specific driver behavior, using loops to create the models. Most of the models did not show any statistically significant changes in driver behavior as a result of the COVID-19 pandemic, except for a few, which noted decreases in crash rates. This could be interpreted by saying the COVID pandemic caused improvements to crash rates and driver behavior involved in crashes. However, when viewing the downward trend is crashes overall over the past twenty years, even with statistically significant causal models, it is more likely that the improvement in the crash rate is due to a continuous trend in reduced crashes over the past two decades. To test this, I performed the DiD models again, this time using only data from the past ten years, making the downward trend in crashes less significant. Using this data, none of the models were statistically significant. Therefore, I would use the results of the DiD models to conclude that there is not enough evidence to determine that COVID has had any effect on driver behavior but driver behavior as indicated by crash rates has been improving over the past twenty years. 
 
 It is notable that the methodology for selecting a control group for the DiD models was not perfect. The results of the DiD models would be more robust and impactful if a better method for identifying control group counties was employed, and the DiD models should be interpreted with that in mind. 
