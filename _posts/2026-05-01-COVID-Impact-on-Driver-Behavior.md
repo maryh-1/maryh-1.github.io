@@ -134,4 +134,15 @@ It is notable that the methodology for selecting a control group for the DiD mod
 
 ### Key Findings Summary
 
-### Limitations
+There is not enough evidence to conclude that driver behavior has worsened since the COVID-19 
+pandemic, and by some metrics, driving behavior has even improved. The SARIMAX models found that 
+drug-related crashes spiked right at the onset of the COVID-19 pandemic, which could explain perceived 
+worsened driving behavior at the beginning of the pandemic. About two years after the pandemic began, 
+there was a significant increase in crashes involving cell phone usage, which may explain the continued 
+perception that driving behavior has worsened since the COVID-19 pandemic.  
+Many crash rates such as crashes involving drinking and driving or an impaired motorist have improved 
+since the COVID pandemic. However, the data does not suggest that COVID was the cause of these 
+improvements, but rather, these crash rates had already been on a downward trend over the past few 
+decades.  
+
+
