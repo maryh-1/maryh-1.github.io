@@ -31,7 +31,7 @@ Products listed on the best sellers page included a little less information in t
 
 Some of the data was extracted using patterns in the product text and the requests_html .search() functionality. For example, product star ratings were always written in the form "{rating} out of 5 stars", so this information was easy to extract directly in python before putting the data in a dataframe. Other information like free delivery and coupon availability was extracted from the entire text output in the cleaning and preprocessing stage. Most of the data was extracted from each product listing's text output except for the title and ASIN. The ASIN was not displayed in the product text, so I pulled into from another part of the html. The title was displayed in the product text but due to each title's differing length and verbage, I found it easier to extract the complete title from another part of the html. "Try" and "except" was used to keep the scraper running when a product didn't display certain information, and 'NA' was inserted for unavailable data. 
 
-  {% highlight python linenos %}
+{% highlight python %}
   
     response = session.get(url)
     response.html.render(sleep=2)
@@ -81,7 +81,7 @@ Some of the data was extracted using patterns in the product text and the reques
     else:
       df = pd.DataFrame(data)
     
-  {% endhighlight %}
+{% endhighlight %}
 
 
 ## Cleaning and Preprocessing
