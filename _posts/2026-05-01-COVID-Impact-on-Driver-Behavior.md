@@ -92,7 +92,7 @@ For some behavior-specific crash rates the actual and predicted values were simi
 
 The Difference-in-Difference models attempt to measure the causality of the pandemic on changes in driver behaviors measured by crash rates. Similar to the SARIMAX models, I made these models for the overall crash rate and crash rates involving specific driver behavior, using loops to create the models. 
 
-{% highlight python linenos %}
+{% highlight python %}
     models_info = []
 for variable in variables:
 
