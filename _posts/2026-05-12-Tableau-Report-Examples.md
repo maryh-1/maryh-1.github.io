@@ -37,6 +37,6 @@ along side each graph allow the user the filter by page views, number of unique 
 
 The interactive version of this dashboard can be found on my tableau public profile, linked [here](https://public.tableau.com/views/WebsiteAnalyticsDashboard_17786239859750/WebsiteAnalyticsDashboard?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link) .
 
-![Website Analytics Dashboard](/images/Web_Analytics_DB.png)
+![Website Analytics Dashboard](/images/Web_Analytics_Dashboard.png)
 
 
