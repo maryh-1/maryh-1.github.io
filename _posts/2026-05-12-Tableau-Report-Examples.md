@@ -22,7 +22,7 @@ This report shows the difference in website engagement metrics from the same mon
 
 This report summarizes website engagement metrics acrosss the entire website for the full fiscal year. It also includes a table of website engagement metrics by page for the full fiscal year. 
 
-![Annual Website Analytics Report](/images/Generic_Web_Annual.png)
+![Annual Website Analytics Report](/images/FY_Web.png)
 
 ### Website Analytics Dashboard
 
