@@ -10,13 +10,13 @@ In addition to viewing the reports below, they can be accessed on my tableau pub
 
 This report shows how important website engagement metrics changed from the previous month with bar charts and a percent change calculation. They also list the top five pages according to the three top website engagement metrics: views, unique users, and average engagegment time for each user. 
 
-![Monthly Website Analytics Report](/images/Generic_Web_Monthly.png)
+![Monthly Website Analytics Report](/images/Monthly_Web.png)
 
 ### Monthly Website Analytics Year-to-Year Comparison
 
 This report shows the difference in website engagement metrics from the same month of the previous year to the current month.
 
-![Monthly Website Analytics Report YoY](/images/Generic_Web_YoY.png)
+![Monthly Website Analytics Report YoY](/images/YoY_Web.png)
 
 ### Website Analytics Fiscal Year Reports
 
