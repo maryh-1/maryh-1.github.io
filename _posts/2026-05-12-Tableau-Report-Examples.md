@@ -32,7 +32,7 @@ easily connect changes in website engagement with events around the same timefra
 
 Clicking on either an event point on the timeline or a month on the graph or table will filter the entire dashboard for that timeframe. 
 
-Additionally, the fitlers on the top of the page can be used to filter by website page and date, affecting both the table and line chart. The filter for measure names 
+Additionally, the filters on the top of the page can be used to filter by website page and date, affecting both the table and line chart. The filter for measure names 
 along side each graph allow the user the filter by page views, number of unique users, and average website engagement time per user. 
 
 The interactive version of this dashboard can be found on my tableau public profile, linked [here](https://public.tableau.com/views/WebsiteAnalyticsDashboard_17786239859750/WebsiteAnalyticsDashboard?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link) .
