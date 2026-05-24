@@ -4,8 +4,9 @@ mathjax: true
 layout: single
 categories: media
 ---
-{% include toc %}
+This Camping and Hiking products analysis project aims to extract insights about products sold on Amazon using publicly available data found in Amazon product listings.
 
+{% include toc %}
 
 ## Overview
 
