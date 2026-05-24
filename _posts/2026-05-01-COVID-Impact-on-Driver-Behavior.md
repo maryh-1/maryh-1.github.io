@@ -2,6 +2,7 @@
 title:  "COVID Impact on Driver Behavior"
 layout: single
 ---
+This post describes my master's capstone project evaluating changes in driver behavior after the COVID-19 pandemic.
 
 My master’s capstone project focused on evaluating changes in driver behavior before and after the COVID-19 pandemic. The pandemic came with many societal changes such as stay at home orders and increased remote work, and some Pennsylvania drivers speculated that following the pandemic, people appeared to be driving worse. My project aims to evaluate this claim. To complete this project, I identified the best metrics given my dataset to evaluate changes in driver behavior, prepared the dataset for modeling, built forecasting and difference and difference models centered around the onset of the pandemic, and interpreted model results in context of Pennsylvania driver behavior and COVID-19.
 
