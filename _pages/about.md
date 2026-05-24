@@ -9,4 +9,6 @@ redirect_from:
 
 Thank you for visiting my website! 
 
+Please see the "Portfolio" tab for examples of my work. 
+
 
