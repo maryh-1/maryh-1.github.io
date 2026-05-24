@@ -53,13 +53,13 @@ The Google Sheets file uses the “GOOGLEFINANCE” function to update individua
 
 The Coffee Bean Sales Dashboard was made using a coffee bean sales dataset downloaded from Kaggle. The dashboard is built to showcase key sales metrics at the top including total sales in dollars, total sales in number of transactions, and the number of unique customers. The graphs provide more depth into sales and transactions by city and by product along side visualizations for the geographic location of sales and distribution of sales by product. 
 
-This dashboard is interactive, with filters at the top. The interactive version of this dashboard can be accessed on my Tabluea public profile found [here][https://public.tableau.com/views/CoffeeBeanSales_17695427478370/CoffeeBeanSales?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link]. 
+This dashboard is interactive, with filters at the top. The interactive version of this dashboard can be accessed on my Tabluea public profile found [here](https://public.tableau.com/views/CoffeeBeanSales_17695427478370/CoffeeBeanSales?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link). 
 
 ![Website Analytics Dashboard](/images/Web_Analytics_Dashboard.png)
 
 The website analytics dashboard allows stakeholders to view website engagement according to various metrics including total views, unique users, and average engagement time per session. This dashboard features a line graph plotting engagement metrics by month. Above the graph is a timeline. Combining these two visualizations together allows stakeholders to view changes in website engagement alongside events that may impact engagement such as outreach events or events that affect website engagement on a recurring basis such as holiday breaks. Towards the bottom of the dashboard, there is a table of website engagement metrics allowing the dashboard user to more easily visualize exact numbers. 
 
-This dashboard is interactive, and the interactive version can be accessed on my Tableau public profile, found [here][https://public.tableau.com/views/WebsiteAnalyticsDashboard_17786239859750/WebsiteAnalyticsDashboard?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link].
+This dashboard is interactive, and the interactive version can be accessed on my Tableau public profile, found [here](https://public.tableau.com/views/WebsiteAnalyticsDashboard_17786239859750/WebsiteAnalyticsDashboard?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link).
 
 ## Google Looker Studio Dashboard
 
