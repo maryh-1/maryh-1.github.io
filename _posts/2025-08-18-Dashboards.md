@@ -47,3 +47,25 @@ The stock data tab also includes the data for the percentage change and hypothet
 
 The Google Sheets file uses the “GOOGLEFINANCE” function to update individual stock data. This sheet updates automatically, so when the Excel dashboard refreshes, it will pull updated data from the Google sheet, and all referenced data in the dashboard will update automatically as well. 
 
+## Tableau Dashboards
+
+![Coffee Bean Sales Dashboard](/images/Coffee_Bean_Sales_Dashboard.png)
+
+The Coffee Bean Sales Dashboard was made using a coffee bean sales dataset downloaded from Kaggle. The dashboard is built to showcase key sales metrics at the top including total sales in dollars, total sales in number of transactions, and the number of unique customers. The graphs provide more depth into sales and transactions by city and by product along side visualizations for the geographic location of sales and distribution of sales by product. 
+
+This dashboard is interactive, with filters at the top. The interactive version of this dashboard can be accessed on my Tabluea public profile found [here][https://public.tableau.com/views/CoffeeBeanSales_17695427478370/CoffeeBeanSales?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link]. 
+
+![Website Analytics Dashboard](/images/Web_Analytics_Dashboard.png)
+
+The website analytics dashboard allows stakeholders to view website engagement according to various metrics including total views, unique users, and average engagement time per session. This dashboard features a line graph plotting engagement metrics by month. Above the graph is a timeline. Combining these two visualizations together allows stakeholders to view changes in website engagement alongside events that may impact engagement such as outreach events or events that affect website engagement on a recurring basis such as holiday breaks. Towards the bottom of the dashboard, there is a table of website engagement metrics allowing the dashboard user to more easily visualize exact numbers. 
+
+This dashboard is interactive, and the interactive version can be accessed on my Tableau public profile, found [here][https://public.tableau.com/views/WebsiteAnalyticsDashboard_17786239859750/WebsiteAnalyticsDashboard?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link].
+
+## Google Looker Studio Dashboard
+
+![Generic Race Analytics Dashboard](/images/Generic_Race_Dashboard.png)
+
+This dashboard was made with Google Looker Studio and was built to track race registraction analytics. It highlights important metrics at the top such as total number of runners registered, revenue, average runner age, and the number of cities participants come from. It was built using simulated race data and will update automatically to reflect real race registration metrics if connected to real race data. 
+
+The dashboard is organized with data related to runners in the top section and data related to revenue in the bottom section. It provides insights into changes in runner participation and revenue from one year to the next while also breaking down runner participation and revenue by race type and city. 
+
