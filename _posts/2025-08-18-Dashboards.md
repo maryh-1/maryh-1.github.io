@@ -1,8 +1,9 @@
 ---
-title:  "Stock Comparison Dashboard"
+title:  "Dashboards"
 layout: single
 ---
 
+This page shows a few examples of dashboards I have built using different tools such as Tableau, Excel, and Google Looker Studio. 
 
 ![Stock Comparison Dashboard](/images/StockComparisonDashboard.png)
 
